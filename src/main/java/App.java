@@ -39,7 +39,7 @@ public class App {
             if (cLine.hasOption("braceStyle")) {
                 _braceStyle = cLine.getOptionValue("braceStyle");
             }
-            if (cLine.hasOption("useTabs")) {
+            if (cLine.hasOption("indent")) {
                 _indent = cLine.getOptionValue("indent");
             }
             String input = cLine.getOptionValue("input");
@@ -72,7 +72,8 @@ public class App {
             }
 
 
-            printer.setUseTabs(_indent.equals("Tabs"));
+            printer.setUseTabs(true);
+//            printer.setUseTabs(_indent.equals("Tabs"));
 
             printer.setArrayInitWrapOptions(new WrapOptions(WrapOptions.WRAP_BY_COLUMN_ONLY_ADD_CRS));
             printer.setSpacesInsideParensEtc(0);
