@@ -133,9 +133,9 @@ public class ActionScriptFormatter {
 			spaces = spaces % tabSize; // change value of spaces to be left-over spaces
 		}
 
-		for (int i = 0; i < spaces; i++) {
-			buffer.append(' ');
-		}
+//		for (int i = 0; i < spaces; i++) {
+//			buffer.append(' ');
+//		}
 		return buffer.toString();
 	}
 
